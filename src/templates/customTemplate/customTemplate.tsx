@@ -19,6 +19,7 @@ export const CustomTemplate: FunctionComponent<TemplateProps<CustomTemplateCerti
     <div css={style} className={className} id="custom-template">
       <div>
         <h1>{document?.foo?.title ?? "Default title"}</h1>
+        <p>kasnkdnajksndkjnkjda</p> 
         <pre>{JSON.stringify(document, null, 2)}</pre>
       </div>
     </div>
