@@ -23,7 +23,7 @@ ReactDOM.render(
   // />,
   <App
   documents={[
-    {name: "COC", document: {
+    {name: "Claim", document: {
       name: "OpenAttestation Tutorial Certificate of Completion",
       // issuers: [
       //   {
@@ -39,9 +39,9 @@ ReactDOM.render(
         name: "John Doe",
       },
       $template: {
-        name: "COC",
+        name: "Claim",
         type: v2.TemplateType.EmbeddedRenderer,
-        url: "ephemeral-pastelito-b01b67",
+        url: "localhost:3000",
       }
 
     }}

@@ -1,0 +1,22 @@
+import { Meta, Preview, Props, Description, Story } from "@storybook/addon-docs/blocks";
+import { object } from "@storybook/addon-knobs";
+import { ClaimTemplate } from "./template";
+import { claimTemplateCertificate } from "../samples/customTemplateSample";
+
+<Meta title="MDX|ClaimTemplate" component={ClaimTemplate} />
+
+# CocTemplate component
+
+<Description of={ClaimTemplate} />
+
+# Props
+
+<Props of={ClaimTemplate} />
+
+# Usage
+
+<Preview>
+  <Story name="basic sample">
+    <ClaimTemplate document={object("document", claimTemplateCertificate)} />
+  </Story>
+</Preview>
