@@ -20,5 +20,5 @@ import { TemplateRegistry } from "@govtechsg/decentralized-renderer-react-compon
 import { templates } from "./coc";
 
 export const registry: TemplateRegistry<any> = {
-  custom: templates,
+  main: templates,
 };

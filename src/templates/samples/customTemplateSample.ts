@@ -23,7 +23,7 @@ export const claimTemplateCertificate: ClaimTemplateCertificate = {
       name: "Ian Tan",
       },
     $template: {
-      name: "custom",
+      name: "main",
       type: v2.TemplateType.EmbeddedRenderer,
       url: "http://localhost:3000"
     }
