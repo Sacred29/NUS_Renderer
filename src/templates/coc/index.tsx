@@ -3,7 +3,7 @@ import { ClaimTemplate } from "./template";
 export const templates = [
     {
       id: "claim",
-      label: "ClaimCertificate",
+      label: "Loan Proof",
       template: ClaimTemplate
     },
   ];
