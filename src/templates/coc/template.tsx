@@ -71,6 +71,9 @@ const claimCss = css`.invoice-box {
         display: block;
         text-align: center;
     }
+    .Title {
+        text-align:center;
+    }
 }
 `
 export const ClaimTemplate: FunctionComponent<
@@ -82,11 +85,11 @@ export const ClaimTemplate: FunctionComponent<
 
             <body>
                 <h1>Panda Bank</h1>
-                <center><p><b> Credit Protection Proof Of Claim</b></p></center>
-                <div class="invoice-box">
-                    <table cellpadding="0" cellspacing="0">
-                        <tr class="top">
-                            <td colspan="2">
+                <p className="Title"><b> Credit Protection Proof Of Claim</b></p>
+                <div className="invoice-box">
+                    <table cellPadding="0" cellSpacing="0">
+                        <tr className="top">
+                            <td colSpan={2}>
                                 <table>
                                     <tr>
 
@@ -97,13 +100,13 @@ export const ClaimTemplate: FunctionComponent<
                                 </table>
                             </td>
                         </tr>
-                        <tr class="heading">
+                        <tr className="heading">
                             <td>Part 1: Claimant and Issuer</td>
 
                             <td> </td>
                         </tr>
-                        <tr class="information">
-                            <td colspan="2">
+                        <tr className="information">
+                            <td colSpan={2}>
                                 <table>
                                     <tr>
                                         <td>
@@ -140,14 +143,14 @@ export const ClaimTemplate: FunctionComponent<
                             </td>
                         </tr>
 
-                        <tr class="heading">
+                        <tr className="heading">
                             <td>Part 2: Loan Details</td>
 
                             <td> </td>
                         </tr>
 
-                        <tr class="details">
-                            <td colspan="2">
+                        <tr className="details">
+                            <td colSpan={2}>
                                 <table>
                                     <tr>
                                         <td>Loan Account: {document.loan.account} <br />
@@ -162,11 +165,11 @@ export const ClaimTemplate: FunctionComponent<
                                 </td>
                                 </tr>
 
-                                <tr class="heading">
+                                <tr className="heading">
                                     <td>Part 3: Payment Agreement </td>
                                 </tr>
 
-                                <tr class="item">
+                                <tr className="item">
                                     <td>The total amount of the Borrowed Money, including
                                         principal and interest, shall be due and payable on
                                         <strong>{document.loan.dueDate}</strong></td>
